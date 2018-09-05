@@ -166,6 +166,7 @@ exec --no-startup-id redshift
 # finds out, if available)
 bar {
         status_command ~/.dotfiles/i3/i3status_ext/wrapper.py i3status
+#         status_command (cat > /tmp/i3status.dump) | ~/src/i3status/i3status
 #        status_command i3status
 #        verbose yes
 }

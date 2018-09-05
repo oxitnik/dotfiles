@@ -8,7 +8,7 @@ is_mounted() {
 if [ -n "$1" ]
 then    
     device_name=$(echo $1 | cut -d':' -f1);
-    device_action=$(echo $1 | cut -d':' -f2);
+    device_action=$(echo $1 | cut -d':' -f3);
 
     if is_mounted ${device_name}; then
         udisksctl unmount --block-device ${device_name} > /dev/null 2>&1
